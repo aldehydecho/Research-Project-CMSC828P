@@ -1,6 +1,7 @@
 # Research Project
 
 ##Proposal
+Proposal for research project.
 
 ### Experiment
 Use Factorial LDA [1] to analysis datasets in Alexandrov, et al. [1], assuming differet tissue types and non-smokers vs smokers as two different factors. This can help us understand smoking's influence over mutation signatures of different tissues, than post-analysis of running NMF on the whole dataset or running NMF individually on different tissues.
