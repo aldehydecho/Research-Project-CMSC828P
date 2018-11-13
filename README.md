@@ -3,7 +3,7 @@
 ## Proposal
 
 ### Experiment
-Use Factorial LDA [1] to analysis datasets in Alexandrov, et al. [2], assuming differet tissue types and non-smokers vs smokers as two different factors. This can help us understand smoking's influence over mutation signatures of different tissues, better than post-analysis of directly running NMF on the whole dataset or running NMF individually on different tissues.
+Use Factorial LDA [1] to analysis datasets in Alexandrov, et al. [2], assuming differet tissue types and non-smokers vs smokers as two different factors. This can help us understand smoking's influence over mutation signatures of different tissues, better than post-analysis of directly running NMF on the whole dataset without any priors or running NMF individually on different tissues.
 
 ### Data and resources
 1. We can use data for "Reproducing Alexandrov, et al. " projects.
