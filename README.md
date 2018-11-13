@@ -7,7 +7,7 @@ Use Factorial LDA [1] to analysis datasets in Alexandrov, et al. [2], assuming d
 
 ### Data and resources
 1. We can use data for "Reproducing Alexandrov, et al. " projects.
-2. We can modify [code from f-LDA author](http://cmci.colorado.edu/~mpaul/downloads/flda.php). The original code is written in Java, we can reproduce it to Python.
+2. We can modify [code from f-LDA author](http://cmci.colorado.edu/~mpaul/downloads/flda.php). The original code is written in Java, we can transform it to Python.
 
 ### Validation plans
 After get topics for different tissues and smoker vs non-smokers groups, we can check the influence of smoking to different tissues' cancers. We could then compare the results with the ones in Alexandrov, et al. [2], to see whether the conclusions are consistent.
