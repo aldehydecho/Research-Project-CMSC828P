@@ -1,4 +1,4 @@
-# Research Project CMSC828P - Extracting signatures using f-LDA
+# Research Project - Extracting signatures using f-LDA
 
 **Author**: Qingyang Tan ([qytan@cs.umd.edu](mailto:qytan@cs.umd.edu))
 **Date**: December 6, 2018
