@@ -17,7 +17,11 @@ Since f-LDA has several different factors (i.e. [Z<sub>1</sub>, Z<sub>2</sub>, Z
 
 Meanwhile, if we train f-LDA only using 1 factor, the results would be similar with vanilla LDA. Though, f-LDA would learn a unified background topic, and would have sparsity over different topics. We think that, in this case, sparsity may prune redundant topics in this case, and reduce the need of model selection.
 
-We can use prior ω over word distribution Φ to get mutation signatures. (In current f-LDA implementation, word assignments are generated from the prior. Thus, extracting signatures from assignments would have a similar results as directly checking the prior.)
+We can use prior ω over word distribution Φ to get mutation signatures. (In current f-LDA implementation, word assignments are generated from the prior. Thus, extracting signatures from assignments would have a similar results as directly checking the prior.) The following is the formulation of prior:
+
+![](figs/f-LDA_eq1.png)
+
+
 
 
 
