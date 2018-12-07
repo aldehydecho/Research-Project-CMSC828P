@@ -9,9 +9,13 @@ Some factors like smoking history, age, gender would impact the mutation process
 
 ### Factorial LDA (f-LDA) overview
 
-According to Paul, et al. [2], factorial LDA is a multi-dimensional model in which a document is inﬂuenced by K different factors, and each word token depends on a K-dimensional vector of latent variables. Here is a figure shown f-LDA as a graphical model.
+According to Paul, et al. [2], factorial LDA is a multi-dimensional model in which a document is inﬂuenced by K different factors, and each word token depends on a K-dimensional vector of latent variables. Here is a figure shown f-LDA as a graphical model:
 
 ![](figs/f-LDA.png)
+
+Since f-LDA has several different factors (i.e. [Z<sub>1</sub>, Z<sub>2</sub>, Z<sub>3</sub>, Z<sub>4</sub>, ..., Z<sub>5</sub>), we can consider different factors as base signatures, smoker vs non-smoker, alcohol user vs non-alcohol user, female vs male and so on. Notice that, f-LDA is pure unsupervised learning, thus we need to check the meaning of different factors manually after training. 
+
+
 
 #### Experiment
 
