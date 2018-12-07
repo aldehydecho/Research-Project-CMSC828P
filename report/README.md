@@ -21,7 +21,7 @@ We can use prior ω over word distribution Φ to get mutation signatures. (In cu
 
 ![](figs/f-LDA_eq1.png)
 
-The parameters of the prior is all learnt by the algorithm. We can interpret ω<sub>(0)</sub> as one unified background signature, ω<sub>(1)</sub> as base signatures, ω<sub>(i)</sub> with i>1 as influences of different factors over first level base signatures.
+The parameters of the prior is all learnt by the algorithm. We can interpret ω<sup>(0)</sup> as one unified background signature, ω<sup>(1)</sup> as base signatures, ω<sup>(i)</sup> with i>1 as influences of different factors over first level base signatures.
 
 
 
