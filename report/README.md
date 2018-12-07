@@ -21,18 +21,15 @@ We can use prior ω over word distribution Φ to get mutation signatures. (In cu
 
 ![](figs/f-LDA_eq1.png)
 
-The parameters of the prior is all learnt by the algorithm. We can interpret ω<sup>(0)</sup> as one unified background signature, ω<sup>(1)</sup> as base signatures, ω<sup>(i)</sup> with i>1 as influences of different factors over first level base signatures.
-
-
-
-
+The parameters of the prior is all learnt by the algorithm. We can interpret ω<sup>(0)</sup> as one unified background signature, ω<sup>(1)</sup> as base signatures, ω<sup>(i)</sup> with i>1 as influences of different factors over the first level base signatures.
 
 #### Experiment
 
+We use datasets form Alexandrov, et al. [1] to perform main experiments. This dataset has smoking/drinking histories, gender and age information. We plan to compute perplexity of f-LDA considering several factors, compared with baseline 1-factor f-LDA. We also want to use probabilities of different topics to predict smoking history.
 
 #### Data, resources, and implementation
 
-#### Validation
+* The data for this experiment is offered by course CMSC 828P in [UMIACS website](https://obj.umiacs.umd.edu/mutation-signature-explorer/index.html). This includes 560 samples of base substitutions.
 
 
 ## Results
