@@ -1,5 +1,7 @@
 # Research Project CMSC828P - Extracting signatures using f-LDA
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 **Author**: Qingyang Tan ([qytan@cs.umd.edu](mailto:qytan@cs.umd.edu))
 **Date**: December 6, 2018
 
