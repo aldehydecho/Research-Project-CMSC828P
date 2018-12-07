@@ -29,7 +29,7 @@ We use datasets form Alexandrov, et al. [1] to perform main experiments. This da
 
 #### Data, resources, and implementation
 
-* The data for this experiment is offered by course CMSC 828P in [UMIACS website](https://obj.umiacs.umd.edu/mutation-signature-explorer/index.html). This includes 560 samples of base substitutions.
+* The data for this experiment is offered by course CMSC 828P in [UMIACS website](https://obj.umiacs.umd.edu/mutation-signature-explorer/index.html). This includes 9724 samples of base substitutions. We include the preprossed tsv file [here](../data/counts.Alexandrov2016.SBS-96.tsv)
 
 
 ## Results
