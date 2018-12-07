@@ -13,7 +13,11 @@ According to Paul, et al. [2], factorial LDA is a multi-dimensional model in whi
 
 ![](figs/f-LDA.png)
 
-Since f-LDA has several different factors (i.e. [Z<sub>1</sub>, Z<sub>2</sub>, Z<sub>3</sub>, Z<sub>4</sub>, ..., Z<sub>5</sub>), we can consider different factors as base signatures, smoker vs non-smoker, alcohol user vs non-alcohol user, female vs male and so on. Notice that, f-LDA is pure unsupervised learning, thus we need to check the meaning of different factors manually after training. 
+Since f-LDA has several different factors (i.e. [Z<sub>1</sub>, Z<sub>2</sub>, Z<sub>3</sub>, Z<sub>4</sub>, ..., Z<sub>K</sub>]), we can consider different factors as base signatures, smoker vs non-smoker, alcohol user vs non-alcohol user, female vs male and so on. Notice that, f-LDA is pure unsupervised learning, thus we need to check the meaning of different factors manually after training. 
+
+Meanwhile, if we train f-LDA only using 1 factor, the results would be similar with vanilla LDA. Though, f-LDA would learn a unified background topic, and would have sparsity over different topics. We think that, in this case, sparsity may prune redundant topics in this case, and reduce the need of model selection.
+
+We can use prior \omega over word distribution \phi to get mutation signatures. (In current f-LDA implementation, word assignments are generated from the prior. Thus, extracting signatures from assignments would have a similar results as directly checking the prior.)
 
 
 
