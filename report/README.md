@@ -73,7 +73,25 @@ Similar results happen with 1-factor f-LDA:
 ![](figs/fLDA_vs_original.png)
 ![](figs/fLDA_vs_self.png)
 
+### Classification
 
+In this experiment, we try to predict smoker/non-smoker using the results of f-LDA. We also compare the results directly using mutation counts. We use [C-Support Vector Classification from sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC). In the dataset of 
+Alexandrov, et al. [1], it has 3087 samples with smoking history information. We split these samples into training set (2160 samples) and testing set (927 samples).
+
+Here is the classifcation results of different inputs:
+| Input | Accuracy |
+| --- | --- |
+| Mutation counts | 0.7389428263214671 |
+| 2-factor f-LDA exposures | 0.7281553398058253 |
+| 1-factor f-LDA exposures | 0.7281553398058253 |
+| Mutation counts (with class balancing) | 0.7464940668824164 |
+| 2-factor f-LDA exposures (with class balancing) | 0.27184466019417475 |
+| 1-factor f-LDA exposures (with class balancing) | 0.27184466019417475 |
+
+If we train SVM without class balancing, using exposures of f-LDA will predict all testing samples as smokers, while training with class balancing will predict all testing samples as non-smokers.
+
+## Discussion
+In sum, it’s not easy to use f-LDA to extract mutation signatures. And since f-LDA is pure unsupervised learning, we cannot ensure the meaning of different factors learned by the algorithm. If we want to improve the results, we hope we can check the correctness of updating α weights, optimize Gibbs sampling part in Python version and incorporate supervised learning with f-LDA.
 
 
 
