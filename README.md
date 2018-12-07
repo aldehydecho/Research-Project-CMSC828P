@@ -1,17 +1,38 @@
-# Research Project
+# Research Project - Extracting signatures using f-LDA
 
-## Proposal
+Source code for research project about extracting signatures using factorial LDA (f-LDA) (Paul, et al. [2]), on dataset from Alexandrov, et al. [2]. In brief, the experiments are:
 
-### Experiment
-Use Factorial LDA [1] to analysis datasets in Alexandrov, et al. [2], assuming differet tissue types and non-smokers vs smokers as two different factors. This can help us understand smoking's influence over mutation signatures of different tissues, better than post-analysis of directly running NMF on the whole dataset without any priors or running NMF individually on different tissues.
+1. Perplexity comparison between 2-factor and 1-factor baseline f-LDA.
+2. Mutation signature extraction using f-LDA.
+3. Smoking history prediction using results of f-LDA.
 
-### Data and resources
-1. We can use data for "Reproducing Alexandrov, et al. " projects.
-2. We can modify [code from f-LDA author](http://cmci.colorado.edu/~mpaul/downloads/flda.php). The original code is written in Java, we can transform it to Python.
+Additional details of the experiments, data, and conclusions can be found in the [`report/`](report/).
 
-### Validation plans
-After get topics for different tissues and smoker vs non-smokers groups, we can check the influence of smoking to different tissues' cancers. We could then compare the results with the ones in Alexandrov, et al. [2], to see whether the conclusions are consistent.
+## Setup
 
+The source code is written in Python 3. We use `snakemake` to manage the workflow. We suggest using Conda to install dependencies, which you can do directly from the provided [`environment.yml`](environment.yml) file.
+
+    conda env create -f environment.yml
+    source activate reproducing-nikzainal2016-env
+
+## Usage
+
+To generate all the figures in the report and related statistical data, simply run:
+
+    snakemake all
+
+The data like accuracy, perplexity on testing data will be printed out on screen during the execution of the scripts.
+
+This will take roughly half a day on a modern CPU to run one f-LDA training script. For example, runing f-LDA on whole dataset from Alexandrov, et al. [2]:
+
+    snakemake run_flda
+
+We 
+
+
+### Configuration
+
+Additional configuration options are detailed at the beginning of the [`Snakefile`](Snakefile).
 
 ## References
 1. Paul, et al. (2012) "Factorial LDA: Sparse Multi-Dimensional Text Models" _NIPS_
