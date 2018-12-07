@@ -13,7 +13,7 @@ Additional details of the experiments, data, and conclusions can be found in the
 The source code is written in Python 3. We use `snakemake` to manage the workflow. We suggest using Conda to install dependencies, which you can do directly from the provided [`environment.yml`](environment.yml) file.
 
     conda env create -f environment.yml
-    source activate reproducing-nikzainal2016-env
+    source activate research-project
 
 ## Usage
 
@@ -26,8 +26,6 @@ The data like accuracy, perplexity on testing data will be printed out on screen
 This will take roughly half a day on a modern CPU to run one f-LDA training script. For example, runing f-LDA on whole dataset from Alexandrov, et al. [2]:
 
     snakemake run_flda
-
-We also provide pre-trained models in [Google Drive](https://drive.google.com/drive/folders/1BqihHQwHQaiw_zZ3m0x_zhr5wzdPV_BR?usp=sharing). You can download them and put in the [`output/`](output/) folder, and then run "snakemake all" to get final results.
 
 
 
