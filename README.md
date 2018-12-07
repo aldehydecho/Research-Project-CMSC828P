@@ -27,7 +27,8 @@ This will take roughly half a day on a modern CPU to run one f-LDA training scri
 
     snakemake run_flda
 
-We 
+We also provide pre-trained models in [Google Drive](https://drive.google.com/drive/folders/1BqihHQwHQaiw_zZ3m0x_zhr5wzdPV_BR?usp=sharing). You can download them and put in the [`output/`](output/) folder, and then run "snakemake all" to get final results.
+
 
 
 ### Configuration
